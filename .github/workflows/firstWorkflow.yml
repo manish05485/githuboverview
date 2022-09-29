@@ -6,13 +6,13 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: firstJob script
-      shell: cmd
-      run: echo Hello Worlds! This is the first job
+        shell: bash
+        run: echo Hello Worlds! This is the first job
   secondjob:
-    runs-on: buntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: secondJob script
-      shell: bash
-      run: |
-        echo this is the second job
-        echo and this is a multi-line script
+        shell: bash
+        run: |
+          echo this is the second job
+          echo and this is a multi-line script
